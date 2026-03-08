@@ -1,0 +1,11 @@
+#   robilem to poto by zrobic wektor pionowy a nie poziomy do mnozenia nie wystarczylo zrobic np. [[]]
+
+X = variants[variant_id].reshape(-1, 1)
+
+#   mnozenie macierzy
+
+K = n @ mu
+
+#   prawdziwa wartosc to cosinusowa urojona to sinusowa
+
+#   synthesized zwraca zrekonstuowana po uzyciu idft

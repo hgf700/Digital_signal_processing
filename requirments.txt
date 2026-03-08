@@ -1,1 +1,1 @@
-pip install notebook numpy matplotlib 
+pip install notebook numpy matplotlib pypandoc
