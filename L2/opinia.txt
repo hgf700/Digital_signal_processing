@@ -1,0 +1,19 @@
+#   ifft zwraca synthesized sygnal z l1
+#   fft po wsadzeniu wartosci synthesized zwroci dane wejsciowe jakie byly np [6, 4, 4, 5, 3, 4, 5, 0, 0, 0, 0]
+
+#   spoko link do wyj windowing https://www.youtube.com/watch?v=1Hd72RpMFlQ
+
+#   rozne okna znaczy to ze nakladam cos w stylu maski np kwadrat,trojkat i ograniczam sygnaly tym ksztaltem maski
+#   jak sie nakladaj idealnie bins to nie ma likage bo to jest problem minimalizacji czym nizsza wartosc db tym lepiej tym bardziej 
+#   ograniczone sa zaklucenia rectangular tylko spelnia jak jest nalozone idealnie
+
+#   leakage to czym wyzsze db tym wiekszy blad czym nizej tym bardziej redukowany blad im wyżej są 
+#   boczne listki (mniej ujemne dB), tym większe leakage
+#   leakage pojawia sie jak nie trafia idealnie w bin
+
+#   ten wysoki punkt to superpozycja/ sumowanie sie wartosci 
+
+#   wysoki sygnal to ten co jest blisko zera niski bliski minimum
+
+#   separacja Problem: okna z niskimi sidelobes (np. Blackman) mają szeroki main lobe → piki mogą się zlewać.
+#   Rozwiązanie: używamy okna z wąskim main lobe, nawet jeśli sidelobes są wyższe.

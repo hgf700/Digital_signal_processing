@@ -1,1 +1,3 @@
 pip install notebook numpy matplotlib pypandoc
+
+choco install pandoc
